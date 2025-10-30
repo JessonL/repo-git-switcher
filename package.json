@@ -1,5 +1,5 @@
 {
-  "name": "@lee/repo-git-switcher",
+  "name": "@lee_0527/repo-git-switcher",
   "version": "1.0.0",
   "description": "安全的多仓库Git分支切换工具 - 不影响远端",
   "main": "lib/core.js",
@@ -13,8 +13,6 @@
   ],
   "scripts": {
     "start": "node bin/msg.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublishOnly": "npm test",
     "postpublish": "echo '发布成功！'"
   },
   "keywords": [

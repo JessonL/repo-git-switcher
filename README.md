@@ -1,4 +1,4 @@
-# @lee/repo-git-switcher
+# @lee_0527/repo-git-switcher
 
 安全的多仓库Git分支切换工具 - 不影响远端
 
@@ -13,13 +13,13 @@
 ## 安装
 
 ```bash
-npm install -g @lee/repo-git-switcher
+npm install -g @lee_0527/repo-git-switcher
 ```
 
 或本地安装：
 
 ```bash
-npm install @lee/repo-git-switcher
+npm install @lee_0527/repo-git-switcher
 ```
 
 ## 使用方法
