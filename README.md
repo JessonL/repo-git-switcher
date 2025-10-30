@@ -1,4 +1,4 @@
-# @lee/mono-switchForGit
+# @lee/repo-git-switcher
 
 安全的多仓库Git分支切换工具 - 不影响远端
 
@@ -13,13 +13,13 @@
 ## 安装
 
 ```bash
-npm install -g @lee/mono-switchForGit
+npm install -g @lee/repo-git-switcher
 ```
 
 或本地安装：
 
 ```bash
-npm install @lee/mono-switchForGit
+npm install @lee/repo-git-switcher
 ```
 
 ## 使用方法
@@ -28,45 +28,45 @@ npm install @lee/mono-switchForGit
 
 ```bash
 # 显示帮助信息
-msg --help
+git-up --help
 
 # 显示版本号
-msg --version
+git-up --version
 ```
 
 ### 切换分支
 
 ```bash
 # 切换到develop分支
-msg switch develop
+git-up switch develop
 
 # 切换到新分支，不存在则创建
-msg sw feature/new-feature -c
+git-up sw feature/new-feature -c
 
 # 切换到main分支并拉取代码
-msg switch main -p
+git-up switch main -p
 
 # 强制切换到hotfix分支（丢弃本地修改）
-msg switch hotfix -f
+git-up switch hotfix -f
 
 # 只处理匹配service-*的项目
-msg switch develop -m "service-*"
+git-up switch develop -m "service-*"
 
 # 指定自定义目录
-msg switch develop -d "./my-packages"
+git-up switch develop -d "./my-packages"
 ```
 
 ### 查看状态
 
 ```bash
 # 列出所有仓库状态
-msg list
+git-up list
 
 # 列出匹配模式的项目状态
-msg ls -m "service-*"
+git-up ls -m "service-*"
 
 # 显示分支状态概览
-msg status
+git-up status
 ```
 
 ## 选项说明
@@ -99,7 +99,7 @@ msg status
 ```
 switch-cli/
 ├── bin/
-│   └── msg.js              # CLI入口文件
+│   └── msg.js              # CLI入口文件 (git-up命令)
 ├── lib/
 │   ├── cli.js              # 命令行界面
 │   ├── core.js             # 核心业务逻辑
@@ -124,7 +124,7 @@ switch-cli/
 npm install
 
 # 运行CLI
-node bin/msg.js --help
+git-up --help
 ```
 
 ## 许可证

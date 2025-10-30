@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 /**
- * @lee/mono-switchForGit CLI 入口文件
- * 使用命令: msg
+ * @lee/repo-git-switcher CLI 入口文件
+ * 使用命令: git-up
  */
 
 require('../lib/cli').run();

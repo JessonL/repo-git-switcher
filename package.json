@@ -1,14 +1,21 @@
 {
-  "name": "@lee/mono-switchForGit",
+  "name": "@lee/repo-git-switcher",
   "version": "1.0.0",
   "description": "安全的多仓库Git分支切换工具 - 不影响远端",
   "main": "lib/core.js",
   "bin": {
-    "msg": "./bin/msg.js"
+    "git-up": "./bin/msg.js"
   },
+  "files": [
+    "bin/",
+    "lib/",
+    "README.md"
+  ],
   "scripts": {
     "start": "node bin/msg.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm test",
+    "postpublish": "echo '发布成功！'"
   },
   "keywords": [
     "git",
@@ -22,8 +29,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lee/mono-switchForGit"
+    "url": "https://github.com/JessonL/repo-git-switcher"
   },
+  "bugs": {
+    "url": "https://github.com/JessonL/repo-git-switcher/issues"
+  },
+  "homepage": "https://github.com/JessonL/repo-git-switcher#readme",
   "engines": {
     "node": ">=12.0.0"
   },
