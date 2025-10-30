@@ -54,6 +54,9 @@ git-up switch develop -m "service-*"
 
 # 指定自定义目录
 git-up switch develop -d "./my-packages"
+
+# 智能分支选择：当分支不存在时，会提示选择其他可用分支
+git-up switch nonexistent-branch
 ```
 
 ### 查看状态
