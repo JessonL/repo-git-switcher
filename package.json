@@ -1,6 +1,6 @@
 {
   "name": "@lee_0527/repo-git-switcher",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "安全的多仓库Git分支切换工具 - 不影响远端",
   "main": "lib/core.js",
   "bin": {
